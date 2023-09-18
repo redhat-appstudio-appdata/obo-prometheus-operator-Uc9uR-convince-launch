@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: obo-prometheus-operator
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/jfajersk-tenant/obo-prometheus-operator/obo-prometheus-operator@sha256:246f0e53be3997989359394282c0f5af6882c76c2d2c58bc972149ed6d9e0528
+        name: container-image
+        resources: {}
+status: {}
